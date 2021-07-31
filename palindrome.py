@@ -8,7 +8,8 @@ def is_prime(number: int) -> bool:
     return len(result_list) == 0
 
 def run():
-    print('Es un palindromo:',is_palindrome(321)) #True
+    print('Es un palindromo:',is_palindrome(321)) #Error has incompatible type "int"; expected "str"
+    print('Es un palindromo:',is_palindrome('ana')) #True
     print('2 Es un numero primo :',is_prime(2)) # True
     print('14 Es un numero primo :',is_prime(14)) # False
 
